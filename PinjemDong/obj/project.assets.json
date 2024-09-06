@@ -14,11 +14,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Users\\LENOVO\\source\\repos\\PinjemDong\\PinjemDong.csproj",
+      "projectUniqueName": "D:\\Users\\LENOVO\\source\\repos\\JunPro\\PinjemDong\\PinjemDong.csproj",
       "projectName": "PinjemDong",
-      "projectPath": "D:\\Users\\LENOVO\\source\\repos\\PinjemDong\\PinjemDong.csproj",
+      "projectPath": "D:\\Users\\LENOVO\\source\\repos\\JunPro\\PinjemDong\\PinjemDong.csproj",
       "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-      "outputPath": "D:\\Users\\LENOVO\\source\\repos\\PinjemDong\\obj\\",
+      "outputPath": "D:\\Users\\LENOVO\\source\\repos\\JunPro\\PinjemDong\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
