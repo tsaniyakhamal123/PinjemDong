@@ -89,11 +89,12 @@
             label5.BackColor = Color.Transparent;
             label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             label5.ForeColor = Color.FromArgb(173, 51, 109);
-            label5.Location = new Point(80, 15);
+            label5.Location = new Point(80, 27);
             label5.Name = "label5";
             label5.Size = new Size(189, 38);
             label5.TabIndex = 6;
             label5.Text = "PinjemDong!";
+            label5.Click += label5_Click;
             // 
             // LoginButton
             // 

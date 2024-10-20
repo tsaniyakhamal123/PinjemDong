@@ -35,9 +35,14 @@ namespace PinjemDong
 
         private void backBtn_Click(object sender, EventArgs e)
         {
-            admin form1 = new admin(); 
-            form1.Show();              
+            admin form1 = new admin();
+            form1.Show();
             this.Close();
+        }
+
+        private void homeAdmin_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }
