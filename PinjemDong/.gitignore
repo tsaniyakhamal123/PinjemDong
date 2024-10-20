@@ -368,3 +368,4 @@ FodyWeavers.xsd
 bin/
 obj/
 .wsuo/
+.vs/slnx.sqlite
