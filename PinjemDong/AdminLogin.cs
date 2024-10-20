@@ -25,5 +25,10 @@ namespace PinjemDong
             adminForm.Show();
             this.Hide();
         }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
