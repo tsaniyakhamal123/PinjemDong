@@ -142,7 +142,7 @@
             // btnSidebar
             // 
             btnSidebar.BackColor = Color.FromArgb(236, 215, 220);
-            btnSidebar.Image = Properties.Resources.menuIcon;
+            btnSidebar.Image = (Image)resources.GetObject("btnSidebar.Image");
             btnSidebar.Location = new Point(12, 82);
             btnSidebar.Name = "btnSidebar";
             btnSidebar.Size = new Size(68, 59);
@@ -153,7 +153,7 @@
             // btnLogout
             // 
             btnLogout.BackColor = Color.FromArgb(236, 215, 220);
-            btnLogout.Image = Properties.Resources.logoutIcon;
+            btnLogout.Image = (Image)resources.GetObject("btnLogout.Image");
             btnLogout.Location = new Point(12, 569);
             btnLogout.Name = "btnLogout";
             btnLogout.Size = new Size(71, 62);
