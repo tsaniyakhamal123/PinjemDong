@@ -121,7 +121,7 @@
   <data name="backBtn.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAACwAAAAsCAYAAAAehFoBAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DQAACw0B7QfALAAAA09JREFUWEfNWdtx4zAMdAn59IxfKeFKcAnuIC4hHSQlqINcB+cOLh04Heg6UAm+
+        DAAACwwBP0AiyAAAA09JREFUWEfNWdtx4zAMdAn59IxfKeFKcAnuIC4hHSQlqINcB+cOLh04Heg6UAm+
         XRtySAgSHyI92RlMHBGPJQmCFLWYgydgs9kc1ut1g79/ttttC+kgFxH+PqPtr+gcaCPmjwOC70lCkYsW
         do7kxV09MAgCchRNIhnSwudR3JfDcrl8lhG1gpaQM2NIuHmAs1fI1NT/gzA/j8833HOUvyG/IJyZBjI1
         O4zxKqZ5gIM3x6GWDxDZi2o02AHY/la+7oL18SaqaYCxSXa3230i6Ozpow/4M4knk4aRRXb+lBmgT/Ht
@@ -147,7 +147,7 @@
   <data name="pictureBox3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAARQAAABkCAYAAABHJc8MAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAADcVJREFUeF7tnb+PHEUWx52DkCNIOMuCBJ0FkhMOEyEdiIzbBAhwsMEJEJFlTIhv
+        DgAACw4BQL7hQQAADcVJREFUeF7tnb+PHEUWx52DkCNIOMuCBJ0FkhMOEyEdiIzbBAhwsMEJEJFlTIhv
         LwEhHdhIENgI2QEiMciWre1Zor3sTrrAF3HhoF1bhP4T5urbrreUi291z/RuVf+Y75M+Gm93V9Wrnv6+
         elXdPT6Wy+Y3bx7fu317415Vnbs3m11zn3fvz2Zz9++FEOuO18Lu/aq6ub+9vbV/584r0IyXjwyGE+JO
         1N9wosKTJ4RYml0MwvPZ7KSX1foZomt9IvgJEkJ0Yxfa8jKbvimQCFGE+V5VbXjZTc9+demY66QCiRBl
@@ -212,7 +212,7 @@
   <data name="pictureBox2.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAPQAAAAiCAYAAABoSPTMAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABsJJREFUeF7tXM9rVFcUzl4RV7qoQlC6UUwXgjTQRQim3ZQaFwlKBNMiRmkXkthd
+        DgAACw4BQL7hQQAABsJJREFUeF7tXM9rVFcUzl4RV7qoQlC6UUwXgjTQRQim3ZQaFwlKBNMiRmkXkthd
         k6YbreCPFHRhihgwdhNFiMx7cdNx14ILu7LLgUxKl/4Jr/e7vvM4c+fc9+7MvKmD73zwkZn7a97k3u+d
         H/fOGwpB49mzvc3nz8eatdrKThS93tnaersTx4myz3z3f67j/769uTmZTodC0R0g5H/i+EcV8MCwgflo
         xPFwOkUKRRiMJb6iQh5YNrZrtdl0qhSKfBgh3xEWkXLQaOYpnTKFQoZx6R6Ki8fh30+fJpsrvyT3f1hK
@@ -247,7 +247,7 @@
   <data name="pictureBox4.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAO0AAAAlCAYAAACu9m5WAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        EAAACxABrSO9dQAABzRJREFUeF7tnc+LVEcQx70bxJuHRBAlF0VzEIS9iWhyi3tREIVIEH+QHGRNbtFs
+        DgAACw4BQL7hQQAABzRJREFUeF7tnc+LVEcQx70bxJuHRBAlF0VzEIS9iWhyi3tREIVIEH+QHGRNbtFs
         jh4SDejBBHEh3lQEZWfW03pLwIM5meOAa8jRP2HSn+f7LmVvvdkZd3X6zVbBl53pru5Xs1XfruqeNzOb
         hpHew4dblx4/Prg0P3/9Vafz/NXCwutX3W4/0DK88dsifnz56NF07d6QSRLI+m+3+2OQdGLRw7+9bndH
         7fKQNkvKqBeDrBsGvZfz86dr14e0URJZrzmODUw6kt/rEAhpk6Ry6Y7r0MBGwZ06FELaIJFhAxUi47ZD
