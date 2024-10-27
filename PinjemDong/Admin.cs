@@ -3,17 +3,23 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.Windows.Forms.VisualStyles.VisualStyleElement.ListView;
+using System.Xml.Linq;
 
 namespace PinjemDong
 {
     public class Pengguna
     {
-        public int User_Id { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
+        public int UserId { get; set; }
         public string Password { get; set; } = string.Empty;
         public string Username { get; set; } = string.Empty;
 
+        public Pengguna(int userId, string pass, string username) 
+        {
+            UserId = userId;
+            Password = pass;
+            Username = username;
+        }
         // Metode untuk login
         public void Login()
         {
@@ -33,6 +39,34 @@ namespace PinjemDong
         }
     }
 
+    public class Pemilik : Pengguna 
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public Pemilik(int userId, string pass, string username, string name, string email) : base(userId, pass, username) 
+        {
+            Name = name;
+            Email = email;
+        }
+
+        public void TambahBarang() { }
+    }
+
+    public class Penyewa : Pengguna
+    {
+        public string Name { get; set; } = string.Empty;
+        public string Email { get; set; } = string.Empty;
+        public Penyewa(int userId, string pass, string username, string name, string email) : base(userId, pass, username)
+        {
+            Name = name;
+            Email = email;
+        }
+    }
+    public class Admin : Pengguna
+    {
+        public Admin(int userId, string pass, string username) : base(userId, pass, username) { }
+    }
+
     public class Barang
     {
         private int barang_id;
@@ -48,42 +82,6 @@ namespace PinjemDong
         {
             //
         }
-    }
-
-    public class Admin
-    {
-        private int AdminID { get; set; }
-        private string AdminName { get; set; } = string.Empty;
-        private string AdminUsername { get; set; } = string.Empty;
-        private string AdminPassword { get; set; } = string.Empty;
-        public void Login() { }
-        public void Logout() { }
-        public void Register() { }
-        public void EditBarang() { }
-    }
-
-    public class Penyewa
-    {
-        public int UserId { get; set; }
-        public string Name { get; set; } = string.Empty;
-        public string Email { get; set; } = string.Empty;
-        private string Password { get; set; } = string.Empty;
-        public string FirstName { get; set; } = string.Empty;
-        public string LastName { get; set; } = string.Empty;
-        public string Username { get; set; } = string.Empty;
-
-        // Metode Login
-        public void Login()
-        {
-
-        }
-
-        // Metode Logout
-        public void Logout()
-        {
-
-        }
-
     }
 
     public class Payment
