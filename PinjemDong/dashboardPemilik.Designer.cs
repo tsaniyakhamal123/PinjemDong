@@ -108,7 +108,7 @@
             productData.SelectionMode = DataGridViewSelectionMode.CellSelect;
             productData.Size = new Size(1268, 651);
             productData.TabIndex = 0;
-            productData.CellContentClick += dataAdmin_CellContentClick;
+            productData.CellContentClick += productData_CellContentClick;
             // 
             // nama
             // 

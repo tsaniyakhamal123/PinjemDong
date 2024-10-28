@@ -35,11 +35,11 @@ namespace PinjemDong
 
         }
 
-        private void dataAdmin_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void productData_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
             if (e.RowIndex >= 0)
             {
-                r = dataAdmin.Rows[e.RowIndex];
+                r = productData.Rows[e.RowIndex];
             }
         }
 
@@ -89,11 +89,11 @@ namespace PinjemDong
         private void btn_delete_Click(object sender, EventArgs e)
         {
             if (r == null)
-                {
-                    MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                    return;
-                }
-                if (MessageBox.Show("Apakah benar anda ingin menghapus data " + r.Cells["_nama_produk"].Value.ToString()+"?", "Hapus data terkonfirmasi",
+            {
+                MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            if (MessageBox.Show("Apakah benar anda ingin menghapus data " + r.Cells["_nama_produk"].Value.ToString()+"?", "Hapus data terkonfirmasi",
                     MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)==DialogResult.Yes)
                 try
                 {
