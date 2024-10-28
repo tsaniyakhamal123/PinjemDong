@@ -1,6 +1,6 @@
 ﻿namespace PinjemDong
 {
-    partial class homePage
+    partial class UpdateBarang
     {
         /// <summary>
         /// Required designer variable.
@@ -28,38 +28,18 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label5 = new Label();
             SuspendLayout();
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.WhiteSmoke;
-            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(173, 51, 109);
-            label5.Location = new Point(85, 19);
-            label5.Name = "label5";
-            label5.Size = new Size(0, 38);
-            label5.TabIndex = 8;
-            // 
-            // homePage
+            // UpdateBarang
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
-            AutoSize = true;
-            AutoSizeMode = AutoSizeMode.GrowAndShrink;
-            BackColor = Color.FromArgb(236, 215, 220);
-            ClientSize = new Size(938, 484);
-            Controls.Add(label5);
-            Name = "homePage";
-            Text = "homePage";
-            Load += homePage_Load;
+            ClientSize = new Size(800, 450);
+            Name = "UpdateBarang";
+            Text = "UpdateBarang";
             ResumeLayout(false);
-            PerformLayout();
         }
 
         #endregion
-
-        private Label label5;
     }
 }

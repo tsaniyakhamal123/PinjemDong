@@ -69,13 +69,11 @@ namespace PinjemDong
 
     public class Barang
     {
-        private int barang_id;
+        public int barang_id;
         public string nama_barang { get; set; } = string.Empty;
         public double harga_barang { get; set; }
-        public int stock { get; set; }
-        public string lokasi { get; set; } = string.Empty;
+        public string deskripsi_barang { get; set; } = string.Empty;
         public string ulasan { get; set; } = string.Empty;
-        public string kategori { get; set; } = string.Empty;
 
         //metode read barang
         public void get_details()
