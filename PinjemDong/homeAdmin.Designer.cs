@@ -173,7 +173,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 215, 220);
-            ClientSize = new Size(928, 630);
+            ClientSize = new Size(1142, 691);
             Controls.Add(deltBtn);
             Controls.Add(pictureBox4);
             Controls.Add(editBtn);
@@ -183,6 +183,7 @@
             Controls.Add(backBtn);
             Name = "homeAdmin";
             Text = "homeAdmin";
+            Load += homeAdmin_Load;
             ((System.ComponentModel.ISupportInitialize)backBtn).EndInit();
             panel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)dataAdmin).EndInit();

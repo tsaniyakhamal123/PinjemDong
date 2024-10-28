@@ -4,10 +4,25 @@
     <Compile Update="AdminLogin.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="checkout.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="history.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Update="homeAdmin.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="testHomeAdmin.cs">
+    <Compile Update="homePage.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="searchResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Update="signUp.cs">
       <SubType>Form</SubType>
     </Compile>
   </ItemGroup>
