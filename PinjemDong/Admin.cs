@@ -32,11 +32,17 @@ namespace PinjemDong
 
         }
 
-        // Metode untuk registrasi
-        public void Register()
+        // Metode untuk sign up
+        public virtual void SignUp()
         {
 
         }
+
+        public virtual void TambahBarang() { }
+        public void ViewBarang() { }
+        public virtual void EditBarang() { }
+        public virtual void HapusBarang() { }
+
     }
 
     public class Pemilik : Pengguna 
@@ -49,7 +55,18 @@ namespace PinjemDong
             Email = email;
         }
 
-        public void TambahBarang() { }
+        public override void TambahBarang() 
+        { 
+            //metode add barang
+        }
+        public override void EditBarang() 
+        {
+            //metode update barang
+        }
+        public override void HapusBarang() 
+        { 
+            //metode delete barang
+        }
     }
 
     public class Penyewa : Pengguna
@@ -65,6 +82,19 @@ namespace PinjemDong
     public class Admin : Pengguna
     {
         public Admin(int userId, string pass, string username) : base(userId, pass, username) { }
+
+        public override void SignUp()
+        {
+            throw new InvalidOperationException("Admin tidak dapat Sign Up. Gunakan username dan password yang telah diberikan.");
+        }
+        public override void EditBarang()
+        {
+            //metode update barang
+        }
+        public override void HapusBarang()
+        {
+            //metode delete barang
+        }
     }
 
     public class Barang
