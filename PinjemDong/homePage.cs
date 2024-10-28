@@ -46,5 +46,10 @@ namespace PinjemDong
         {
 
         }
+
+        private void homePage_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
