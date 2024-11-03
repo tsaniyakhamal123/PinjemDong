@@ -78,6 +78,12 @@ namespace PinjemDong
             Name = name;
             Email = email;
         }
+
+
+        public void checkout()
+        {
+
+        }
     }
     public class Admin : Pengguna
     {
@@ -94,59 +100,6 @@ namespace PinjemDong
         public override void HapusBarang()
         {
             //metode delete barang
-        }
-    }
-
-    public class Barang
-    {
-        public int barang_id;
-        public string nama_barang { get; set; } = string.Empty;
-        public double harga_barang { get; set; }
-        public string deskripsi_barang { get; set; } = string.Empty;
-        public string ulasan { get; set; } = string.Empty;
-
-        //metode read barang
-        public void get_details()
-        {
-            //
-        }
-    }
-
-    public class Payment
-    {
-        public int PaymentId { get; set; }
-        public string MetodePayment { get; set; } = string.Empty;
-        public double TotalPembayaran { get; set; }
-        public string StatusPayment { get; set; } = string.Empty;
-
-        public void payment()
-        {
-
-        }
-
-        public void payment_method()
-        {
-
-        }
-    }
-
-    public class Sewa_Barang
-    {
-        private int rent_ID;
-        public DateTime rent_date { get; set; }
-        public DateTime return_date { get; set; }
-        private int renter_ID;
-        public string alamat_pengiriman { get; set; } = string.Empty;
-        public string note { get; set; } = string.Empty;
-        public string status_order { get; set; } = string.Empty;
-        public void add_ulasan()
-        {
-
-        }
-
-        public void make_order()
-        {
-
         }
     }
 }

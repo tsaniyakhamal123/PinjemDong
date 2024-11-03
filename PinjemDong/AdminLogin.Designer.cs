@@ -97,6 +97,7 @@
             UsernameBox.Name = "UsernameBox";
             UsernameBox.Size = new Size(296, 28);
             UsernameBox.TabIndex = 2;
+            UsernameBox.TextChanged += UsernameBox_TextChanged;
             // 
             // label3
             // 
