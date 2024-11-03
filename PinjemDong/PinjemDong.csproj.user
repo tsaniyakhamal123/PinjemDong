@@ -25,5 +25,8 @@
     <Compile Update="signUp.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="testHomeAdmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

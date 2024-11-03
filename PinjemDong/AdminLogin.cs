@@ -8,6 +8,8 @@ namespace PinjemDong
 
         }
 
+        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -27,6 +29,11 @@ namespace PinjemDong
         }
 
         private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameBox_TextChanged(object sender, EventArgs e)
         {
 
         }

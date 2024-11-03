@@ -115,6 +115,7 @@
             PasswordBox.Size = new Size(296, 33);
             PasswordBox.TabIndex = 3;
             PasswordBox.UseSystemPasswordChar = true;
+            PasswordBox.TextChanged += PasswordBox_TextChanged;
             // 
             // UsernameBox
             // 
@@ -123,6 +124,7 @@
             UsernameBox.Name = "UsernameBox";
             UsernameBox.Size = new Size(296, 28);
             UsernameBox.TabIndex = 2;
+            UsernameBox.TextChanged += UsernameBox_TextChanged;
             // 
             // label3
             // 
