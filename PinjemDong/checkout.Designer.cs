@@ -28,57 +28,59 @@
         /// </summary>
         private void InitializeComponent()
         {
+            components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(checkout));
             panel3 = new Panel();
-            button1 = new Button();
-            label15 = new Label();
-            label16 = new Label();
-            label17 = new Label();
-            label18 = new Label();
-            label14 = new Label();
-            comboBox2 = new ComboBox();
-            label10 = new Label();
-            label11 = new Label();
-            label12 = new Label();
-            label13 = new Label();
+            btn_checkout = new Button();
+            nominal_total = new Label();
+            nominal_biayaLayanan = new Label();
+            nominal_ongkir = new Label();
+            nominal_subtotal = new Label();
+            lbl_total = new Label();
+            comboBox_payMethod = new ComboBox();
+            lbl_biayaLayanan = new Label();
+            lbl_ongkir = new Label();
+            lbl_pembayaran = new Label();
+            lbl_subtotal = new Label();
             panel2 = new Panel();
-            label9 = new Label();
-            label7 = new Label();
-            pictureBox2 = new PictureBox();
-            label6 = new Label();
-            label8 = new Label();
+            lbl_Harga = new Label();
+            lblVariasi = new Label();
+            pic_barang = new PictureBox();
+            lbl_detailBarang = new Label();
+            lbl_namaBarang = new Label();
             panel1 = new Panel();
             pictureBox1 = new PictureBox();
-            label2 = new Label();
-            PasswordBox = new TextBox();
-            UsernameBox = new TextBox();
-            label3 = new Label();
-            label4 = new Label();
-            label1 = new Label();
-            label5 = new Label();
-            backBtn = new PictureBox();
+            lbl_alamatPengiriman = new Label();
+            txt_alamat = new TextBox();
+            txt_namaPenerima = new TextBox();
+            lbl_alamat = new Label();
+            lbl_namaPenerima = new Label();
+            lbl_checkout = new Label();
+            lbl_PinjemDong = new Label();
+            btn_back = new PictureBox();
+            contextMenuStrip1 = new ContextMenuStrip(components);
             panel3.SuspendLayout();
             panel2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pic_barang).BeginInit();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)backBtn).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)btn_back).BeginInit();
             SuspendLayout();
             // 
             // panel3
             // 
             panel3.BackColor = Color.White;
-            panel3.Controls.Add(button1);
-            panel3.Controls.Add(label15);
-            panel3.Controls.Add(label16);
-            panel3.Controls.Add(label17);
-            panel3.Controls.Add(label18);
-            panel3.Controls.Add(label14);
-            panel3.Controls.Add(comboBox2);
-            panel3.Controls.Add(label10);
-            panel3.Controls.Add(label11);
-            panel3.Controls.Add(label12);
-            panel3.Controls.Add(label13);
+            panel3.Controls.Add(btn_checkout);
+            panel3.Controls.Add(nominal_total);
+            panel3.Controls.Add(nominal_biayaLayanan);
+            panel3.Controls.Add(nominal_ongkir);
+            panel3.Controls.Add(nominal_subtotal);
+            panel3.Controls.Add(lbl_total);
+            panel3.Controls.Add(comboBox_payMethod);
+            panel3.Controls.Add(lbl_biayaLayanan);
+            panel3.Controls.Add(lbl_ongkir);
+            panel3.Controls.Add(lbl_pembayaran);
+            panel3.Controls.Add(lbl_subtotal);
             panel3.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel3.ForeColor = Color.White;
             panel3.Location = new Point(85, 582);
@@ -86,126 +88,126 @@
             panel3.Size = new Size(774, 201);
             panel3.TabIndex = 20;
             // 
-            // button1
+            // btn_checkout
             // 
-            button1.BackColor = Color.FromArgb(173, 51, 109);
-            button1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
-            button1.Location = new Point(542, 132);
-            button1.Name = "button1";
-            button1.Size = new Size(209, 53);
-            button1.TabIndex = 19;
-            button1.Text = "Buat Pesanan";
-            button1.UseVisualStyleBackColor = false;
+            btn_checkout.BackColor = Color.FromArgb(173, 51, 109);
+            btn_checkout.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_checkout.Location = new Point(542, 132);
+            btn_checkout.Name = "btn_checkout";
+            btn_checkout.Size = new Size(209, 53);
+            btn_checkout.TabIndex = 19;
+            btn_checkout.Text = "Buat Pesanan";
+            btn_checkout.UseVisualStyleBackColor = false;
             // 
-            // label15
+            // nominal_total
             // 
-            label15.AutoSize = true;
-            label15.ForeColor = Color.FromArgb(102, 102, 102);
-            label15.Location = new Point(208, 161);
-            label15.Name = "label15";
-            label15.Size = new Size(112, 24);
-            label15.TabIndex = 18;
-            label15.Text = "Rp.XXX.000";
+            nominal_total.AutoSize = true;
+            nominal_total.ForeColor = Color.FromArgb(102, 102, 102);
+            nominal_total.Location = new Point(208, 161);
+            nominal_total.Name = "nominal_total";
+            nominal_total.Size = new Size(112, 24);
+            nominal_total.TabIndex = 18;
+            nominal_total.Text = "Rp.XXX.000";
             // 
-            // label16
+            // nominal_biayaLayanan
             // 
-            label16.AutoSize = true;
-            label16.ForeColor = Color.FromArgb(102, 102, 102);
-            label16.Location = new Point(208, 125);
-            label16.Name = "label16";
-            label16.Size = new Size(86, 24);
-            label16.TabIndex = 17;
-            label16.Text = "Rp.X.000";
+            nominal_biayaLayanan.AutoSize = true;
+            nominal_biayaLayanan.ForeColor = Color.FromArgb(102, 102, 102);
+            nominal_biayaLayanan.Location = new Point(208, 125);
+            nominal_biayaLayanan.Name = "nominal_biayaLayanan";
+            nominal_biayaLayanan.Size = new Size(86, 24);
+            nominal_biayaLayanan.TabIndex = 17;
+            nominal_biayaLayanan.Text = "Rp.X.000";
             // 
-            // label17
+            // nominal_ongkir
             // 
-            label17.AutoSize = true;
-            label17.ForeColor = Color.FromArgb(102, 102, 102);
-            label17.Location = new Point(208, 90);
-            label17.Name = "label17";
-            label17.Size = new Size(99, 24);
-            label17.TabIndex = 16;
-            label17.Text = "Rp.XX.000";
+            nominal_ongkir.AutoSize = true;
+            nominal_ongkir.ForeColor = Color.FromArgb(102, 102, 102);
+            nominal_ongkir.Location = new Point(208, 90);
+            nominal_ongkir.Name = "nominal_ongkir";
+            nominal_ongkir.Size = new Size(99, 24);
+            nominal_ongkir.TabIndex = 16;
+            nominal_ongkir.Text = "Rp.XX.000";
             // 
-            // label18
+            // nominal_subtotal
             // 
-            label18.AutoSize = true;
-            label18.ForeColor = Color.FromArgb(102, 102, 102);
-            label18.Location = new Point(208, 55);
-            label18.Name = "label18";
-            label18.Size = new Size(112, 24);
-            label18.TabIndex = 15;
-            label18.Text = "Rp.XXX.000";
+            nominal_subtotal.AutoSize = true;
+            nominal_subtotal.ForeColor = Color.FromArgb(102, 102, 102);
+            nominal_subtotal.Location = new Point(208, 55);
+            nominal_subtotal.Name = "nominal_subtotal";
+            nominal_subtotal.Size = new Size(112, 24);
+            nominal_subtotal.TabIndex = 15;
+            nominal_subtotal.Text = "Rp.XXX.000";
             // 
-            // label14
+            // lbl_total
             // 
-            label14.AutoSize = true;
-            label14.ForeColor = Color.FromArgb(102, 102, 102);
-            label14.Location = new Point(26, 161);
-            label14.Name = "label14";
-            label14.Size = new Size(53, 24);
-            label14.TabIndex = 14;
-            label14.Text = "Total";
+            lbl_total.AutoSize = true;
+            lbl_total.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_total.Location = new Point(26, 161);
+            lbl_total.Name = "lbl_total";
+            lbl_total.Size = new Size(53, 24);
+            lbl_total.TabIndex = 14;
+            lbl_total.Text = "Total";
             // 
-            // comboBox2
+            // comboBox_payMethod
             // 
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Items.AddRange(new object[] { "Transfer Bank", "Virtual Account", "Cash on Delivery" });
-            comboBox2.Location = new Point(416, 55);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(335, 32);
-            comboBox2.TabIndex = 13;
-            comboBox2.Text = "  Pilih Metode Pembayaran";
+            comboBox_payMethod.FormattingEnabled = true;
+            comboBox_payMethod.Items.AddRange(new object[] { "Transfer Bank", "Virtual Account", "Cash on Delivery" });
+            comboBox_payMethod.Location = new Point(416, 55);
+            comboBox_payMethod.Name = "comboBox_payMethod";
+            comboBox_payMethod.Size = new Size(335, 32);
+            comboBox_payMethod.TabIndex = 13;
+            comboBox_payMethod.Text = "  Pilih Metode Pembayaran";
             // 
-            // label10
+            // lbl_biayaLayanan
             // 
-            label10.AutoSize = true;
-            label10.ForeColor = Color.FromArgb(102, 102, 102);
-            label10.Location = new Point(26, 125);
-            label10.Name = "label10";
-            label10.Size = new Size(121, 24);
-            label10.TabIndex = 7;
-            label10.Text = "Biaya Layanan";
+            lbl_biayaLayanan.AutoSize = true;
+            lbl_biayaLayanan.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_biayaLayanan.Location = new Point(26, 125);
+            lbl_biayaLayanan.Name = "lbl_biayaLayanan";
+            lbl_biayaLayanan.Size = new Size(121, 24);
+            lbl_biayaLayanan.TabIndex = 7;
+            lbl_biayaLayanan.Text = "Biaya Layanan";
             // 
-            // label11
+            // lbl_ongkir
             // 
-            label11.AutoSize = true;
-            label11.ForeColor = Color.FromArgb(102, 102, 102);
-            label11.Location = new Point(26, 90);
-            label11.Name = "label11";
-            label11.Size = new Size(118, 24);
-            label11.TabIndex = 6;
-            label11.Text = "Ongkos Kirim";
+            lbl_ongkir.AutoSize = true;
+            lbl_ongkir.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_ongkir.Location = new Point(26, 90);
+            lbl_ongkir.Name = "lbl_ongkir";
+            lbl_ongkir.Size = new Size(118, 24);
+            lbl_ongkir.TabIndex = 6;
+            lbl_ongkir.Text = "Ongkos Kirim";
             // 
-            // label12
+            // lbl_pembayaran
             // 
-            label12.AutoSize = true;
-            label12.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label12.ForeColor = Color.DimGray;
-            label12.Location = new Point(15, 13);
-            label12.Name = "label12";
-            label12.Size = new Size(152, 32);
-            label12.TabIndex = 4;
-            label12.Text = "Pembayaran";
+            lbl_pembayaran.AutoSize = true;
+            lbl_pembayaran.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lbl_pembayaran.ForeColor = Color.DimGray;
+            lbl_pembayaran.Location = new Point(15, 13);
+            lbl_pembayaran.Name = "lbl_pembayaran";
+            lbl_pembayaran.Size = new Size(152, 32);
+            lbl_pembayaran.TabIndex = 4;
+            lbl_pembayaran.Text = "Pembayaran";
             // 
-            // label13
+            // lbl_subtotal
             // 
-            label13.AutoSize = true;
-            label13.ForeColor = Color.FromArgb(102, 102, 102);
-            label13.Location = new Point(26, 55);
-            label13.Name = "label13";
-            label13.Size = new Size(143, 24);
-            label13.TabIndex = 0;
-            label13.Text = "Subtotal Produk";
+            lbl_subtotal.AutoSize = true;
+            lbl_subtotal.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_subtotal.Location = new Point(26, 55);
+            lbl_subtotal.Name = "lbl_subtotal";
+            lbl_subtotal.Size = new Size(143, 24);
+            lbl_subtotal.TabIndex = 0;
+            lbl_subtotal.Text = "Subtotal Produk";
             // 
             // panel2
             // 
             panel2.BackColor = Color.White;
-            panel2.Controls.Add(label9);
-            panel2.Controls.Add(label7);
-            panel2.Controls.Add(pictureBox2);
-            panel2.Controls.Add(label6);
-            panel2.Controls.Add(label8);
+            panel2.Controls.Add(lbl_Harga);
+            panel2.Controls.Add(lblVariasi);
+            panel2.Controls.Add(pic_barang);
+            panel2.Controls.Add(lbl_detailBarang);
+            panel2.Controls.Add(lbl_namaBarang);
             panel2.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel2.ForeColor = Color.White;
             panel2.Location = new Point(85, 355);
@@ -213,66 +215,66 @@
             panel2.Size = new Size(774, 201);
             panel2.TabIndex = 19;
             // 
-            // label9
+            // lbl_Harga
             // 
-            label9.AutoSize = true;
-            label9.ForeColor = Color.FromArgb(102, 102, 102);
-            label9.Location = new Point(233, 138);
-            label9.Name = "label9";
-            label9.Size = new Size(202, 24);
-            label9.TabIndex = 7;
-            label9.Text = "Jumlah Barang x Harga";
+            lbl_Harga.AutoSize = true;
+            lbl_Harga.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_Harga.Location = new Point(233, 138);
+            lbl_Harga.Name = "lbl_Harga";
+            lbl_Harga.Size = new Size(202, 24);
+            lbl_Harga.TabIndex = 7;
+            lbl_Harga.Text = "Jumlah Barang x Harga";
             // 
-            // label7
+            // lblVariasi
             // 
-            label7.AutoSize = true;
-            label7.ForeColor = Color.FromArgb(102, 102, 102);
-            label7.Location = new Point(233, 96);
-            label7.Name = "label7";
-            label7.Size = new Size(66, 24);
-            label7.TabIndex = 6;
-            label7.Text = "Variasi";
+            lblVariasi.AutoSize = true;
+            lblVariasi.ForeColor = Color.FromArgb(102, 102, 102);
+            lblVariasi.Location = new Point(233, 96);
+            lblVariasi.Name = "lblVariasi";
+            lblVariasi.Size = new Size(66, 24);
+            lblVariasi.TabIndex = 6;
+            lblVariasi.Text = "Variasi";
             // 
-            // pictureBox2
+            // pic_barang
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(26, 48);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(130, 124);
-            pictureBox2.SizeMode = PictureBoxSizeMode.StretchImage;
-            pictureBox2.TabIndex = 5;
-            pictureBox2.TabStop = false;
+            pic_barang.Image = (Image)resources.GetObject("pic_barang.Image");
+            pic_barang.Location = new Point(26, 48);
+            pic_barang.Name = "pic_barang";
+            pic_barang.Size = new Size(130, 124);
+            pic_barang.SizeMode = PictureBoxSizeMode.StretchImage;
+            pic_barang.TabIndex = 5;
+            pic_barang.TabStop = false;
             // 
-            // label6
+            // lbl_detailBarang
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label6.ForeColor = Color.DimGray;
-            label6.Location = new Point(15, 13);
-            label6.Name = "label6";
-            label6.Size = new Size(167, 32);
-            label6.TabIndex = 4;
-            label6.Text = "Detail Barang";
+            lbl_detailBarang.AutoSize = true;
+            lbl_detailBarang.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lbl_detailBarang.ForeColor = Color.DimGray;
+            lbl_detailBarang.Location = new Point(15, 13);
+            lbl_detailBarang.Name = "lbl_detailBarang";
+            lbl_detailBarang.Size = new Size(167, 32);
+            lbl_detailBarang.TabIndex = 4;
+            lbl_detailBarang.Text = "Detail Barang";
             // 
-            // label8
+            // lbl_namaBarang
             // 
-            label8.AutoSize = true;
-            label8.ForeColor = Color.FromArgb(102, 102, 102);
-            label8.Location = new Point(233, 58);
-            label8.Name = "label8";
-            label8.Size = new Size(118, 24);
-            label8.TabIndex = 0;
-            label8.Text = "Nama Barang";
+            lbl_namaBarang.AutoSize = true;
+            lbl_namaBarang.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_namaBarang.Location = new Point(233, 58);
+            lbl_namaBarang.Name = "lbl_namaBarang";
+            lbl_namaBarang.Size = new Size(118, 24);
+            lbl_namaBarang.TabIndex = 0;
+            lbl_namaBarang.Text = "Nama Barang";
             // 
             // panel1
             // 
             panel1.BackColor = Color.White;
             panel1.Controls.Add(pictureBox1);
-            panel1.Controls.Add(label2);
-            panel1.Controls.Add(PasswordBox);
-            panel1.Controls.Add(UsernameBox);
-            panel1.Controls.Add(label3);
-            panel1.Controls.Add(label4);
+            panel1.Controls.Add(lbl_alamatPengiriman);
+            panel1.Controls.Add(txt_alamat);
+            panel1.Controls.Add(txt_namaPenerima);
+            panel1.Controls.Add(lbl_alamat);
+            panel1.Controls.Add(lbl_namaPenerima);
             panel1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.ForeColor = Color.White;
             panel1.Location = new Point(85, 108);
@@ -292,86 +294,92 @@
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
             // 
-            // label2
+            // lbl_alamatPengiriman
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
-            label2.ForeColor = Color.DimGray;
-            label2.Location = new Point(49, 9);
-            label2.Name = "label2";
-            label2.Size = new Size(227, 32);
-            label2.TabIndex = 4;
-            label2.Text = "Alamat Pengiriman";
+            lbl_alamatPengiriman.AutoSize = true;
+            lbl_alamatPengiriman.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lbl_alamatPengiriman.ForeColor = Color.DimGray;
+            lbl_alamatPengiriman.Location = new Point(49, 9);
+            lbl_alamatPengiriman.Name = "lbl_alamatPengiriman";
+            lbl_alamatPengiriman.Size = new Size(227, 32);
+            lbl_alamatPengiriman.TabIndex = 4;
+            lbl_alamatPengiriman.Text = "Alamat Pengiriman";
             // 
-            // PasswordBox
+            // txt_alamat
             // 
-            PasswordBox.Location = new Point(36, 163);
-            PasswordBox.Name = "PasswordBox";
-            PasswordBox.Size = new Size(695, 33);
-            PasswordBox.TabIndex = 3;
-            PasswordBox.UseSystemPasswordChar = true;
+            txt_alamat.Location = new Point(36, 163);
+            txt_alamat.Name = "txt_alamat";
+            txt_alamat.Size = new Size(695, 33);
+            txt_alamat.TabIndex = 3;
+            txt_alamat.UseSystemPasswordChar = true;
             // 
-            // UsernameBox
+            // txt_namaPenerima
             // 
-            UsernameBox.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            UsernameBox.Location = new Point(36, 83);
-            UsernameBox.Name = "UsernameBox";
-            UsernameBox.Size = new Size(296, 28);
-            UsernameBox.TabIndex = 2;
+            txt_namaPenerima.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
+            txt_namaPenerima.Location = new Point(36, 83);
+            txt_namaPenerima.Name = "txt_namaPenerima";
+            txt_namaPenerima.Size = new Size(296, 28);
+            txt_namaPenerima.TabIndex = 2;
             // 
-            // label3
+            // lbl_alamat
             // 
-            label3.AutoSize = true;
-            label3.ForeColor = Color.FromArgb(102, 102, 102);
-            label3.Location = new Point(36, 133);
-            label3.Name = "label3";
-            label3.Size = new Size(141, 24);
-            label3.TabIndex = 1;
-            label3.Text = "Alamat Lengkap";
+            lbl_alamat.AutoSize = true;
+            lbl_alamat.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_alamat.Location = new Point(36, 133);
+            lbl_alamat.Name = "lbl_alamat";
+            lbl_alamat.Size = new Size(141, 24);
+            lbl_alamat.TabIndex = 1;
+            lbl_alamat.Text = "Alamat Lengkap";
             // 
-            // label4
+            // lbl_namaPenerima
             // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.FromArgb(102, 102, 102);
-            label4.Location = new Point(36, 55);
-            label4.Name = "label4";
-            label4.Size = new Size(135, 24);
-            label4.TabIndex = 0;
-            label4.Text = "Nama Penerima";
+            lbl_namaPenerima.AutoSize = true;
+            lbl_namaPenerima.ForeColor = Color.FromArgb(102, 102, 102);
+            lbl_namaPenerima.Location = new Point(36, 55);
+            lbl_namaPenerima.Name = "lbl_namaPenerima";
+            lbl_namaPenerima.Size = new Size(135, 24);
+            lbl_namaPenerima.TabIndex = 0;
+            lbl_namaPenerima.Text = "Nama Penerima";
             // 
-            // label1
+            // lbl_checkout
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.ForeColor = Color.FromArgb(173, 51, 109);
-            label1.Location = new Point(407, 47);
-            label1.Name = "label1";
-            label1.Size = new Size(152, 38);
-            label1.TabIndex = 17;
-            label1.Text = "Check Out";
+            lbl_checkout.AutoSize = true;
+            lbl_checkout.BackColor = Color.Transparent;
+            lbl_checkout.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_checkout.ForeColor = Color.FromArgb(173, 51, 109);
+            lbl_checkout.Location = new Point(407, 47);
+            lbl_checkout.Name = "lbl_checkout";
+            lbl_checkout.Size = new Size(152, 38);
+            lbl_checkout.TabIndex = 17;
+            lbl_checkout.Text = "Check Out";
             // 
-            // label5
+            // lbl_PinjemDong
             // 
-            label5.AutoSize = true;
-            label5.BackColor = Color.WhiteSmoke;
-            label5.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
-            label5.ForeColor = Color.FromArgb(173, 51, 109);
-            label5.Location = new Point(85, 13);
-            label5.Name = "label5";
-            label5.Size = new Size(189, 38);
-            label5.TabIndex = 15;
-            label5.Text = "PinjemDong!";
+            lbl_PinjemDong.AutoSize = true;
+            lbl_PinjemDong.BackColor = Color.WhiteSmoke;
+            lbl_PinjemDong.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
+            lbl_PinjemDong.ForeColor = Color.FromArgb(173, 51, 109);
+            lbl_PinjemDong.Location = new Point(85, 13);
+            lbl_PinjemDong.Name = "lbl_PinjemDong";
+            lbl_PinjemDong.Size = new Size(189, 38);
+            lbl_PinjemDong.TabIndex = 15;
+            lbl_PinjemDong.Text = "PinjemDong!";
             // 
-            // backBtn
+            // btn_back
             // 
-            backBtn.Image = (Image)resources.GetObject("backBtn.Image");
-            backBtn.Location = new Point(15, 13);
-            backBtn.Name = "backBtn";
-            backBtn.Size = new Size(45, 37);
-            backBtn.SizeMode = PictureBoxSizeMode.Zoom;
-            backBtn.TabIndex = 16;
-            backBtn.TabStop = false;
+            btn_back.Image = (Image)resources.GetObject("btn_back.Image");
+            btn_back.Location = new Point(15, 13);
+            btn_back.Name = "btn_back";
+            btn_back.Size = new Size(45, 37);
+            btn_back.SizeMode = PictureBoxSizeMode.Zoom;
+            btn_back.TabIndex = 16;
+            btn_back.TabStop = false;
+            // 
+            // contextMenuStrip1
+            // 
+            contextMenuStrip1.ImageScalingSize = new Size(24, 24);
+            contextMenuStrip1.Name = "contextMenuStrip1";
+            contextMenuStrip1.Size = new Size(61, 4);
             // 
             // checkout
             // 
@@ -382,20 +390,20 @@
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
-            Controls.Add(label1);
-            Controls.Add(label5);
-            Controls.Add(backBtn);
+            Controls.Add(lbl_checkout);
+            Controls.Add(lbl_PinjemDong);
+            Controls.Add(btn_back);
             Name = "checkout";
             Text = "checkout";
             panel3.ResumeLayout(false);
             panel3.PerformLayout();
             panel2.ResumeLayout(false);
             panel2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pic_barang).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)backBtn).EndInit();
+            ((System.ComponentModel.ISupportInitialize)btn_back).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -403,32 +411,33 @@
         #endregion
 
         private Panel panel3;
-        private Button button1;
-        private Label label15;
-        private Label label16;
-        private Label label17;
-        private Label label18;
-        private Label label14;
-        private ComboBox comboBox2;
-        private Label label10;
-        private Label label11;
-        private Label label12;
-        private Label label13;
+        private Button btn_checkout;
+        private Label nominal_total;
+        private Label nominal_biayaLayanan;
+        private Label nominal_ongkir;
+        private Label nominal_subtotal;
+        private Label lbl_total;
+        private ComboBox comboBox_payMethod;
+        private Label lbl_biayaLayanan;
+        private Label lbl_ongkir;
+        private Label lbl_pembayaran;
+        private Label lbl_subtotal;
         private Panel panel2;
-        private Label label9;
-        private Label label7;
-        private PictureBox pictureBox2;
-        private Label label6;
-        private Label label8;
+        private Label lbl_Harga;
+        private Label lblVariasi;
+        private PictureBox pic_barang;
+        private Label lbl_detailBarang;
+        private Label lbl_namaBarang;
         private Panel panel1;
         private PictureBox pictureBox1;
-        private Label label2;
-        private TextBox PasswordBox;
-        private TextBox UsernameBox;
-        private Label label3;
-        private Label label4;
-        private Label label1;
-        private Label label5;
-        private PictureBox backBtn;
+        private Label lbl_alamatPengiriman;
+        private TextBox txt_alamat;
+        private TextBox txt_namaPenerima;
+        private Label lbl_alamat;
+        private Label lbl_namaPenerima;
+        private Label lbl_checkout;
+        private Label lbl_PinjemDong;
+        private PictureBox btn_back;
+        private ContextMenuStrip contextMenuStrip1;
     }
 }

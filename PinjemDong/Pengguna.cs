@@ -163,6 +163,12 @@ namespace PinjemDong
             Name = name;
             Email = email;
         }
+
+
+        public void checkout()
+        {
+
+        }
     }
 
     public class Admin : Pengguna
@@ -182,6 +188,7 @@ namespace PinjemDong
             //metode delete barang
         }
     }
+<<<<<<< HEAD:PinjemDong/Admin.cs
 
     //public class Barang
     //{
@@ -233,3 +240,6 @@ namespace PinjemDong
         }
     }
 }
+=======
+}
+>>>>>>> db808bc42479d128a9de9921bad66fe2b34c3a1f:PinjemDong/Pengguna.cs
