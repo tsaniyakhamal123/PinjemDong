@@ -183,20 +183,20 @@ namespace PinjemDong
         }
     }
 
-    public class Barang
-    {
-        public int barang_id;
-        public string nama_barang { get; set; } = string.Empty;
-        public double harga_barang { get; set; }
-        public string deskripsi_barang { get; set; } = string.Empty;
-        public string ulasan { get; set; } = string.Empty;
+    //public class Barang
+    //{
+    //    public int barang_id;
+    //    public string nama_barang { get; set; } = string.Empty;
+    //    public double harga_barang { get; set; }
+    //    public string deskripsi_barang { get; set; } = string.Empty;
+    //    public string ulasan { get; set; } = string.Empty;
 
-        //metode read barang
-        public void get_details()
-        {
-            //
-        }
-    }
+    //    //metode read barang
+    //    public void get_details()
+    //    {
+    //        //
+    //    }
+    //}
 
     public class Payment
     {

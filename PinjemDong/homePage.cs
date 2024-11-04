@@ -188,9 +188,9 @@ namespace PinjemDong
             // Logika untuk perubahan teks pada textBox1
         }
 
-        private void homePage_Load(object sender, EventArgs e)
-        {
+        //private void homePage_Load(object sender, EventArgs e)
+        //{
 
-        }
+        //}
     }
 }
