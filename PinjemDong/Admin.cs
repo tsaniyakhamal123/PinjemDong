@@ -113,11 +113,17 @@ namespace PinjemDong
             // Implementasi metode logout
         }
 
-        // Metode untuk registrasi
-        public void Register()
+        // Metode untuk sign up
+        public virtual void SignUp()
         {
-            // Implementasi metode registrasi
+
         }
+
+        public virtual void TambahBarang() { }
+        public void ViewBarang() { }
+        public virtual void EditBarang() { }
+        public virtual void HapusBarang() { }
+
     }
 
     public class Pemilik : Pengguna
@@ -133,27 +139,18 @@ namespace PinjemDong
             Email = email;
         }
 
-        // Method untuk memasukkan data pemilik ke database
-        //public void InsertPemilik(NpgsqlConnection conn)
-        //{
-        //    try
-        //    {
-        //        string query = "INSERT INTO pemilik (user_id, name, email) VALUES (@userId, @name, @email) " +
-        //                       "ON CONFLICT (user_id) DO NOTHING"; // Menghindari duplikat
-
-        //        using (var cmd = new NpgsqlCommand(query, conn))
-        //        {
-        //            cmd.Parameters.AddWithValue("@userId", UserId);
-        //            cmd.Parameters.AddWithValue("@name", Name);
-        //            cmd.Parameters.AddWithValue("@email", Email);
-        //            cmd.ExecuteNonQuery();
-        //        }
-        //    }
-        //    catch (Exception ex)
-        //    {
-        //        MessageBox.Show("Error adding pemilik: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        //    }
-        //}
+        public override void TambahBarang() 
+        { 
+            //metode add barang
+        }
+        public override void EditBarang() 
+        {
+            //metode update barang
+        }
+        public override void HapusBarang() 
+        { 
+            //metode delete barang
+        }
     }
 
     public class Penyewa : Pengguna
@@ -170,8 +167,34 @@ namespace PinjemDong
 
     public class Admin : Pengguna
     {
-        public Admin(int userId, string pass, string username) : base(userId, pass, username)
+        public Admin(int userId, string pass, string username) : base(userId, pass, username) { }
+
+        public override void SignUp()
         {
+            throw new InvalidOperationException("Admin tidak dapat Sign Up. Gunakan username dan password yang telah diberikan.");
+        }
+        public override void EditBarang()
+        {
+            //metode update barang
+        }
+        public override void HapusBarang()
+        {
+            //metode delete barang
+        }
+    }
+
+    public class Barang
+    {
+        public int barang_id;
+        public string nama_barang { get; set; } = string.Empty;
+        public double harga_barang { get; set; }
+        public string deskripsi_barang { get; set; } = string.Empty;
+        public string ulasan { get; set; } = string.Empty;
+
+        //metode read barang
+        public void get_details()
+        {
+            //
         }
     }
 

@@ -164,7 +164,6 @@
             Name = "homePage";
             Text = "homePage";
             Load += homePage_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
