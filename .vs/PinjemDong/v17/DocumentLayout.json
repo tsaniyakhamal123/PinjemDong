@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\Source\\Repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\Form1.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\Source\\Repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\signUp.Designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -19,8 +19,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\signUp.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\Source\\Repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\Admin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\Source\\Repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:PinjemDong\\.gitignore||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\INFINIX\\Source\\Repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\PinjemDong.csproj.user||{FA3CD31E-987B-443A-9B81-186104E8DAC1}",
@@ -34,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 7,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -56,19 +56,19 @@
               "RelativeDocumentMoniker": "PinjemDong\\signUp.cs",
               "ToolTip": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\signUp.cs",
               "RelativeToolTip": "PinjemDong\\signUp.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T09:36:47.655Z"
+              "WhenOpened": "2024-10-27T09:36:47.655Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 1,
               "Title": "Admin.cs",
               "DocumentMoniker": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Admin.cs",
               "RelativeDocumentMoniker": "PinjemDong\\Admin.cs",
               "ToolTip": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Admin.cs",
               "RelativeToolTip": "PinjemDong\\Admin.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-19T13:54:27.329Z"
             },
@@ -82,11 +82,12 @@
               "RelativeToolTip": "PinjemDong\\signUp.Designer.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-27T08:05:41.865Z"
+              "WhenOpened": "2024-10-27T08:05:41.865Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "PinjemDong\\Form1.Designer.cs",
@@ -97,7 +98,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": ".gitignore",
               "DocumentMoniker": "C:\\Users\\INFINIX\\source\\repos\\tsaniyakhamal123\\PinjemDong\\PinjemDong\\.gitignore",
               "RelativeDocumentMoniker": "PinjemDong\\.gitignore",

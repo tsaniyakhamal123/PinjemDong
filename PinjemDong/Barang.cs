@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Npgsql;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,16 +9,34 @@ namespace PinjemDong
 {
     public class Barang
     {
-        public int barang_id;
-        public string nama_barang { get; set; } = string.Empty;
-        public double harga_barang { get; set; }
-        public string deskripsi_barang { get; set; } = string.Empty;
-        public string ulasan { get; set; } = string.Empty;
+        public string NamaBarang { get; set; } = string.Empty;
+        public int Stock { get; set; }
+        public string Ulasan { get; set; } = string.Empty;
+        public string Kategori { get; set; } = string.Empty;
+        public decimal Harga { get; set; }
+        public int OwnerId { get; set; }
 
-        //metode read barang
-        public void get_details()
+
+        private void InsertOrUpdatePemilik(Pemilik pemilik, NpgsqlConnection conn)
         {
-            //
+            try
+            {
+                string checkQuery = "SELECT COUNT(*) FROM pemilik WHERE user_id = @userId";
+                using (var checkCmd = new NpgsqlCommand(checkQuery, conn))
+                {
+                    checkCmd.Parameters.AddWithValue("@userId", pemilik.UserId);
+                    int count = Convert.ToInt32(checkCmd.ExecuteScalar());
+
+                    if (count == 0)
+                    {
+                        pemilik.InsertPemilik(conn);
+                    }
+                }
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show("Error inserting or updating pemilik: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
     }
 }
