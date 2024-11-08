@@ -34,13 +34,13 @@
             NameBox = new TextBox();
             signButton = new Button();
             panel1 = new Panel();
+            label4 = new Label();
+            label1 = new Label();
             button2 = new Button();
-            button1 = new Button();
+            loginButton = new Button();
             label5 = new Label();
             label3 = new Label();
             label2 = new Label();
-            label1 = new Label();
-            label4 = new Label();
             panel1.SuspendLayout();
             SuspendLayout();
             // 
@@ -80,7 +80,7 @@
             // 
             signButton.BackColor = Color.FromArgb(173, 51, 109);
             signButton.ForeColor = Color.White;
-            signButton.Location = new Point(115, 495);
+            signButton.Location = new Point(121, 496);
             signButton.Name = "signButton";
             signButton.Size = new Size(137, 47);
             signButton.TabIndex = 4;
@@ -97,7 +97,7 @@
             panel1.Controls.Add(emailBox);
             panel1.Controls.Add(button2);
             panel1.Controls.Add(NameBox);
-            panel1.Controls.Add(button1);
+            panel1.Controls.Add(loginButton);
             panel1.Controls.Add(label5);
             panel1.Controls.Add(passwordBox);
             panel1.Controls.Add(label3);
@@ -110,6 +110,26 @@
             panel1.Size = new Size(353, 558);
             panel1.TabIndex = 5;
             // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.ForeColor = Color.FromArgb(102, 102, 102);
+            label4.Location = new Point(32, 413);
+            label4.Name = "label4";
+            label4.Size = new Size(53, 24);
+            label4.TabIndex = 10;
+            label4.Text = "Email";
+            // 
+            // label1
+            // 
+            label1.AutoSize = true;
+            label1.ForeColor = Color.FromArgb(102, 102, 102);
+            label1.Location = new Point(27, 337);
+            label1.Name = "label1";
+            label1.Size = new Size(56, 24);
+            label1.TabIndex = 9;
+            label1.Text = "Nama";
+            // 
             // button2
             // 
             button2.BackColor = Color.FromArgb(236, 215, 220);
@@ -121,16 +141,16 @@
             button2.Text = "Sign Up";
             button2.UseVisualStyleBackColor = false;
             // 
-            // button1
+            // loginButton
             // 
-            button1.BackColor = Color.White;
-            button1.ForeColor = Color.FromArgb(102, 102, 102);
-            button1.Location = new Point(173, 88);
-            button1.Name = "button1";
-            button1.Size = new Size(150, 50);
-            button1.TabIndex = 7;
-            button1.Text = "Log In";
-            button1.UseVisualStyleBackColor = false;
+            loginButton.BackColor = Color.White;
+            loginButton.ForeColor = Color.FromArgb(102, 102, 102);
+            loginButton.Location = new Point(173, 88);
+            loginButton.Name = "loginButton";
+            loginButton.Size = new Size(150, 50);
+            loginButton.TabIndex = 7;
+            loginButton.Text = "Log In";
+            loginButton.UseVisualStyleBackColor = false;
             // 
             // label5
             // 
@@ -164,26 +184,6 @@
             label2.TabIndex = 0;
             label2.Text = "Username";
             // 
-            // label1
-            // 
-            label1.AutoSize = true;
-            label1.ForeColor = Color.FromArgb(102, 102, 102);
-            label1.Location = new Point(27, 337);
-            label1.Name = "label1";
-            label1.Size = new Size(56, 24);
-            label1.TabIndex = 9;
-            label1.Text = "Nama";
-            // 
-            // label4
-            // 
-            label4.AutoSize = true;
-            label4.ForeColor = Color.FromArgb(102, 102, 102);
-            label4.Location = new Point(32, 413);
-            label4.Name = "label4";
-            label4.Size = new Size(53, 24);
-            label4.TabIndex = 10;
-            label4.Text = "Email";
-            // 
             // signUp
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -208,7 +208,7 @@
         private Button signButton;
         private Panel panel1;
         private Button button2;
-        private Button button1;
+        private Button loginButton;
         private Label label5;
         private Label label3;
         private Label label2;
