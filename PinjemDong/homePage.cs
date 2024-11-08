@@ -7,7 +7,8 @@ namespace PinjemDong
     public partial class homePage : Form
     {
         private int userId;
-        private string connString = "Host=localhost;Port=5432;Username=postgres;Password=ininiya123;Database=JunproBener";
+        private string connString = "Host=postgres-junpro.cpm48umoy5cj.ap-southeast-2.rds.amazonaws.com;Port=5432;Username=postgres;Password=PinjemDong!;Database=pinjemdong";
+
 
         // Constructor dengan parameter userId
         public homePage(int userId)
