@@ -8,7 +8,6 @@ namespace PinjemDong
     {
         private int userId;
         private string connString = "Host=localhost;Port=5432;Username=postgres;Password=ininiya123;Database=JunproBener";
-        private byte[] imageBytes;
 
         // Constructor dengan parameter userId
         public homePage(int userId)
@@ -30,42 +29,18 @@ namespace PinjemDong
         // Method untuk load data barang ke DataGridView
         private void LoadDataGrid()
         {
-            try
+            // Implementasi untuk memuat data barang dari database ke DataGridView
+            using (var conn = new NpgsqlConnection(connString))
             {
-                using (var conn = new NpgsqlConnection(connString))
+                conn.Open();
+                string query = "SELECT * FROM barang";
+                using (var cmd = new NpgsqlCommand(query, conn))
                 {
-                    conn.Open();
-                    string query = "SELECT nama_barang, stock, ulasan, kategori, harga, gambar FROM barang";
-                    using (var cmd = new NpgsqlCommand(query, conn))
-                    {
-                        NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
-                        System.Data.DataTable dt = new System.Data.DataTable();
-                        da.Fill(dt);
-
-                        if (!dt.Columns.Contains("ImageDisplay"))
-                            dt.Columns.Add("ImageDisplay", typeof(System.Drawing.Image));
-
-                        foreach (System.Data.DataRow row in dt.Rows)
-                        {
-                            if (row["gambar"] != DBNull.Value)
-                            {
-                                byte[] imgBytes = (byte[])row["gambar"];
-                                using (var ms = new System.IO.MemoryStream(imgBytes))
-                                {
-                                    row["ImageDisplay"] = System.Drawing.Image.FromStream(ms);
-                                }
-                            }
-                        }
-
-                        dataGridView1.DataSource = dt;
-                        dataGridView1.Columns["gambar"].Visible = false;
-                        dataGridView1.Columns["ImageDisplay"].HeaderText = "Image";
-                    }
+                    NpgsqlDataAdapter da = new NpgsqlDataAdapter(cmd);
+                    System.Data.DataTable dt = new System.Data.DataTable();
+                    da.Fill(dt);
+                    dataGridView1.DataSource = dt; // Mengisi DataGridView dengan data barang
                 }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Terjadi kesalahan saat memuat data: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
@@ -94,9 +69,9 @@ namespace PinjemDong
         }
 
         // Method untuk mendapatkan nama pemilik dari database
-        private string? GetOwnerName()
+        private string GetOwnerName()
         {
-            string? ownerName = null;
+            string ownerName = string.Empty;
             string query = "SELECT name FROM pengguna WHERE user_id = @userId";
 
             using (var conn = new NpgsqlConnection(connString))
@@ -106,16 +81,19 @@ namespace PinjemDong
                 {
                     cmd.Parameters.AddWithValue("@userId", userId);
                     var result = cmd.ExecuteScalar();
-                    ownerName = result?.ToString() ?? string.Empty; // Use null-coalescing operator
+                    if (result != null)
+                    {
+                        ownerName = result.ToString();
+                    }
                 }
             }
             return ownerName;
         }
 
         // Method untuk mendapatkan email pemilik dari database
-        private string? GetOwnerEmail()
+        private string GetOwnerEmail()
         {
-            string? ownerEmail = null;
+            string ownerEmail = string.Empty;
             string query = "SELECT email FROM pengguna WHERE user_id = @userId";
 
             using (var conn = new NpgsqlConnection(connString))
@@ -125,7 +103,10 @@ namespace PinjemDong
                 {
                     cmd.Parameters.AddWithValue("@userId", userId);
                     var result = cmd.ExecuteScalar();
-                    ownerEmail = result?.ToString() ?? string.Empty; // Use null-coalescing operator
+                    if (result != null)
+                    {
+                        ownerEmail = result.ToString();
+                    }
                 }
             }
             return ownerEmail;
@@ -142,48 +123,35 @@ namespace PinjemDong
         {
             try
             {
-                // Retrieve data from input fields
+                // Ambil data dari TextBox
                 string namaBarang = NameTB.Text;
                 int stock = int.Parse(stockTB.Text);
                 string kategori = kategoriTB.Text;
                 decimal harga = decimal.Parse(hargaTB.Text);
-                string ulasan = ""; // Placeholder for reviews if needed
+                string ulasan = ""; // Tambahkan ulasan jika diperlukan
 
-                if (imageBytes == null)
-                {
-                    MessageBox.Show("Please select an image.", "Input Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                    return;
-                }
-
-                // Establish a connection to the database
                 using (var conn = new NpgsqlConnection(connString))
                 {
                     conn.Open();
 
-                    // SQL query to insert a new item with image into the barang table
-                    string insertBarangQuery = "INSERT INTO barang (nama_barang, stock, ulasan, kategori, harga, owner_id, gambar) " +
-                                               "VALUES (@namaBarang, @stock, @ulasan, @kategori, @harga, @ownerId, @gambar)";
+                    // Query untuk menambahkan barang
+                    string insertBarangQuery = "INSERT INTO barang (nama_barang, stock, ulasan, kategori, harga, owner_id) " +
+                                               "VALUES (@namaBarang, @stock, @ulasan, @kategori, @harga, @ownerId)";
                     using (var cmd = new NpgsqlCommand(insertBarangQuery, conn))
                     {
-                        // Add parameters to the query to prevent SQL injection
                         cmd.Parameters.AddWithValue("@namaBarang", namaBarang);
                         cmd.Parameters.AddWithValue("@stock", stock);
                         cmd.Parameters.AddWithValue("@ulasan", ulasan);
                         cmd.Parameters.AddWithValue("@kategori", kategori);
                         cmd.Parameters.AddWithValue("@harga", harga);
                         cmd.Parameters.AddWithValue("@ownerId", userId);
-                        cmd.Parameters.AddWithValue("@gambar", imageBytes);
 
-                        // Execute the query to insert the item
                         cmd.ExecuteNonQuery();
                     }
 
-                    // Show a success message to the user
                     MessageBox.Show("Barang berhasil ditambahkan.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    LoadDataGrid(); // Muat ulang DataGridView untuk menampilkan data terbaru
                 }
-
-                // Refresh the DataGridView to display the newly added item
-                LoadDataGrid();
             }
             catch (FormatException fe)
             {
@@ -220,32 +188,9 @@ namespace PinjemDong
             // Logika untuk perubahan teks pada textBox1
         }
 
-        private void BrowseButton_Click(object sender, EventArgs e)
-        {
-            using (OpenFileDialog openFileDialog = new OpenFileDialog())
-            {
-                openFileDialog.Filter = "Image Files|*.jpg;*.jpeg;*.png;*.bmp";
-                if (openFileDialog.ShowDialog() == DialogResult.OK)
-                {
-                    // Load the selected image and convert it to byte array
-                    string filePath = openFileDialog.FileName;
-                    imageBytes = System.IO.File.ReadAllBytes(filePath);
+        //private void homePage_Load(object sender, EventArgs e)
+        //{
 
-                    // Display the selected image in pictureBox1
-                    using (var ms = new System.IO.MemoryStream(imageBytes))
-                    {
-                        pictureBox1.Image = System.Drawing.Image.FromStream(ms);
-                    }
-
-                    MessageBox.Show("Image selected successfully.", "Success", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                }
-            }
-        }
-
-
-        private void pictureBox1_Click(object sender, EventArgs e)
-        {
-
-        }
+        //}
     }
 }

@@ -16,5 +16,17 @@ namespace PinjemDong
         {
             InitializeComponent();
         }
+
+        private void searchResult_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pbBackBUtton_Click(object sender, EventArgs e)
+        {
+            homePage homeForm = new homePage();
+            homeForm.Show();
+            this.Close();
+        }
     }
 }

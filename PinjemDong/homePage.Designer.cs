@@ -39,10 +39,7 @@
             kategoriTB = new TextBox();
             label4 = new Label();
             hargaTB = new TextBox();
-            pictureBox1 = new PictureBox();
-            BrowseButton = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // label5
@@ -65,6 +62,7 @@
             dataGridView1.RowTemplate.Height = 33;
             dataGridView1.Size = new Size(1035, 412);
             dataGridView1.TabIndex = 9;
+           // dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // addButton
             // 
@@ -144,25 +142,6 @@
             hargaTB.TabIndex = 22;
             hargaTB.TextChanged += hargaTB_TextChanged;
             // 
-            // pictureBox1
-            // 
-            pictureBox1.Location = new Point(942, 616);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(150, 75);
-            pictureBox1.TabIndex = 23;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click;
-            // 
-            // BrowseButton
-            // 
-            BrowseButton.Location = new Point(945, 713);
-            BrowseButton.Name = "BrowseButton";
-            BrowseButton.Size = new Size(147, 110);
-            BrowseButton.TabIndex = 24;
-            BrowseButton.Text = "Browse";
-            BrowseButton.UseVisualStyleBackColor = true;
-            BrowseButton.Click += BrowseButton_Click;
-            // 
             // homePage
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -171,8 +150,6 @@
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(236, 215, 220);
             ClientSize = new Size(1455, 968);
-            Controls.Add(BrowseButton);
-            Controls.Add(pictureBox1);
             Controls.Add(hargaTB);
             Controls.Add(label4);
             Controls.Add(kategoriTB);
@@ -187,8 +164,6 @@
             Name = "homePage";
             Text = "homePage";
             Load += homePage_Load;
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -206,7 +181,5 @@
         private TextBox kategoriTB;
         private Label label4;
         private TextBox hargaTB;
-        private PictureBox pictureBox1;
-        private Button BrowseButton;
     }
 }
