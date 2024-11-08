@@ -8,6 +8,8 @@ namespace PinjemDong
 
         }
 
+        
+
         private void label1_Click(object sender, EventArgs e)
         {
 
@@ -24,6 +26,16 @@ namespace PinjemDong
             homeAdmin adminForm = new homeAdmin();
             adminForm.Show();
             this.Hide();
+        }
+
+        private void admin_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void UsernameBox_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }

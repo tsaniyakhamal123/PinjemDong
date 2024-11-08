@@ -8,13 +8,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using static System.Windows.Forms.DataFormats;
 
 namespace PinjemDong
 {
-    public partial class homeAdmin : Form
+    public partial class dashboardPemilik : Form
     {
-        public homeAdmin()
+        public dashboardPemilik()
         {
             InitializeComponent();
         }
@@ -26,7 +25,7 @@ namespace PinjemDong
         private string sql = null;
         private DataGridViewRow r;
 
-        public void homeAdmin_Load(object sender, EventArgs e)
+        public void dashboardPemilik_Load(object sender, EventArgs e)
         {
             conn = new NpgsqlConnection(connString);
         }
@@ -34,23 +33,6 @@ namespace PinjemDong
         private void filterbtn_Click(object sender, EventArgs e)
         {
 
-        }
-
-        private void pictureBox2_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataAdmin_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void backBtn_Click(object sender, EventArgs e)
-        {
-            admin form1 = new admin();
-            form1.Show();
-            this.Close();
         }
 
         private void productData_CellContentClick(object sender, DataGridViewCellEventArgs e)
@@ -111,8 +93,8 @@ namespace PinjemDong
                 MessageBox.Show("Mohon pilih baris data yang akan diupdate", "Good!", MessageBoxButtons.OK, MessageBoxIcon.Information);
                 return;
             }
-            if (MessageBox.Show("Apakah benar anda ingin menghapus data " + r.Cells["_nama_produk"].Value.ToString() + "?", "Hapus data terkonfirmasi",
-                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1) == DialogResult.Yes)
+            if (MessageBox.Show("Apakah benar anda ingin menghapus data " + r.Cells["_nama_produk"].Value.ToString()+"?", "Hapus data terkonfirmasi",
+                    MessageBoxButtons.YesNo, MessageBoxIcon.Question, MessageBoxDefaultButton.Button1)==DialogResult.Yes)
                 try
                 {
                     conn.Open();
