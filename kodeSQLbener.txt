@@ -1,0 +1,106 @@
+BEGIN;
+
+CREATE TABLE IF NOT EXISTS public.admin
+(
+    admin_id serial NOT NULL,
+    admin_name character varying(255) COLLATE pg_catalog."default",
+    username character varying(255) COLLATE pg_catalog."default",
+    password character varying(255) COLLATE pg_catalog."default",
+    CONSTRAINT admin_pkey PRIMARY KEY (admin_id)
+);
+
+CREATE TABLE IF NOT EXISTS public.pengguna
+(
+    user_id serial NOT NULL,
+    name character varying(100) COLLATE pg_catalog."default",
+    email character varying(100) COLLATE pg_catalog."default",
+    password character varying(100) COLLATE pg_catalog."default",
+    username character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT pengguna_pkey PRIMARY KEY (user_id)
+);
+
+CREATE TABLE IF NOT EXISTS public.pemilik
+(
+    owner_id integer NOT NULL,
+    CONSTRAINT pemilik_pkey PRIMARY KEY (owner_id),
+    CONSTRAINT pemilik_owner_id_fkey FOREIGN KEY (owner_id)
+    REFERENCES public.pengguna (user_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+);
+
+CREATE TABLE IF NOT EXISTS public.penyewa
+(
+    renter_id integer NOT NULL,
+    CONSTRAINT penyewa_pkey PRIMARY KEY (renter_id),
+    CONSTRAINT penyewa_renter_id_fkey FOREIGN KEY (renter_id)
+    REFERENCES public.pengguna (user_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+);
+
+CREATE TABLE IF NOT EXISTS public.barang
+(
+    barang_id serial NOT NULL,
+    owner_id integer NOT NULL,
+    nama_barang character varying(255) COLLATE pg_catalog."default",
+    stock integer,
+    ulasan text COLLATE pg_catalog."default",
+    kategori character varying(255) COLLATE pg_catalog."default",
+    harga numeric(10, 2),
+    CONSTRAINT barang_pkey PRIMARY KEY (barang_id),
+    CONSTRAINT barang_owner_id_fkey FOREIGN KEY (owner_id)
+    REFERENCES public.pemilik (owner_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+);
+
+CREATE TABLE IF NOT EXISTS public.barang_admin_edit
+(
+    admin_id integer NOT NULL,
+    barang_id integer NOT NULL,
+    CONSTRAINT barang_admin_edit_pkey PRIMARY KEY (admin_id, barang_id),
+    CONSTRAINT barang_admin_id_fkey FOREIGN KEY (admin_id)
+    REFERENCES public.admin (admin_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION,
+    CONSTRAINT barang_admin_barang_id_fkey FOREIGN KEY (barang_id)
+    REFERENCES public.barang (barang_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+);
+
+CREATE TABLE IF NOT EXISTS public.payment
+(
+    payment_id serial NOT NULL,
+    metode_payment character varying(255) COLLATE pg_catalog."default",
+    total_pembayaran numeric(10, 2),
+    status_payment character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT payment_pkey PRIMARY KEY (payment_id)
+);
+
+CREATE TABLE IF NOT EXISTS public.sewa_barang
+(
+    rent_id serial NOT NULL,
+    renter_id integer NOT NULL,
+    barang_id integer NOT NULL,
+    payment_id integer,
+    rent_date date,
+    return_date date,
+    status_order character varying(50) COLLATE pg_catalog."default",
+    CONSTRAINT sewa_barang_pkey PRIMARY KEY (rent_id),
+    CONSTRAINT sewa_renter_id_fkey FOREIGN KEY (renter_id)
+    REFERENCES public.penyewa (renter_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION,
+    CONSTRAINT sewa_barang_id_fkey FOREIGN KEY (barang_id)
+    REFERENCES public.barang (barang_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION,
+    CONSTRAINT sewa_payment_id_fkey FOREIGN KEY (payment_id)
+    REFERENCES public.payment (payment_id) MATCH SIMPLE
+    ON UPDATE NO ACTION
+    ON DELETE NO ACTION
+);
+
+END;
