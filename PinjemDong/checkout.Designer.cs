@@ -83,7 +83,7 @@
             panel3.Controls.Add(lbl_subtotal);
             panel3.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel3.ForeColor = Color.White;
-            panel3.Location = new Point(85, 582);
+            panel3.Location = new Point(210, 585);
             panel3.Name = "panel3";
             panel3.Size = new Size(774, 201);
             panel3.TabIndex = 20;
@@ -153,7 +153,7 @@
             // 
             comboBox_payMethod.FormattingEnabled = true;
             comboBox_payMethod.Items.AddRange(new object[] { "Transfer Bank", "Virtual Account", "Cash on Delivery" });
-            comboBox_payMethod.Location = new Point(416, 55);
+            comboBox_payMethod.Location = new Point(416, 13);
             comboBox_payMethod.Name = "comboBox_payMethod";
             comboBox_payMethod.Size = new Size(335, 32);
             comboBox_payMethod.TabIndex = 13;
@@ -210,7 +210,7 @@
             panel2.Controls.Add(lbl_namaBarang);
             panel2.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel2.ForeColor = Color.White;
-            panel2.Location = new Point(85, 355);
+            panel2.Location = new Point(210, 360);
             panel2.Name = "panel2";
             panel2.Size = new Size(774, 201);
             panel2.TabIndex = 19;
@@ -238,7 +238,7 @@
             // pic_barang
             // 
             pic_barang.Image = (Image)resources.GetObject("pic_barang.Image");
-            pic_barang.Location = new Point(26, 48);
+            pic_barang.Location = new Point(26, 52);
             pic_barang.Name = "pic_barang";
             pic_barang.Size = new Size(130, 124);
             pic_barang.SizeMode = PictureBoxSizeMode.StretchImage;
@@ -248,11 +248,11 @@
             // lbl_detailBarang
             // 
             lbl_detailBarang.AutoSize = true;
-            lbl_detailBarang.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lbl_detailBarang.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_detailBarang.ForeColor = Color.DimGray;
             lbl_detailBarang.Location = new Point(15, 13);
             lbl_detailBarang.Name = "lbl_detailBarang";
-            lbl_detailBarang.Size = new Size(167, 32);
+            lbl_detailBarang.Size = new Size(169, 32);
             lbl_detailBarang.TabIndex = 4;
             lbl_detailBarang.Text = "Detail Barang";
             // 
@@ -277,7 +277,7 @@
             panel1.Controls.Add(lbl_namaPenerima);
             panel1.Font = new Font("Comic Sans MS", 9F, FontStyle.Regular, GraphicsUnit.Point);
             panel1.ForeColor = Color.White;
-            panel1.Location = new Point(85, 108);
+            panel1.Location = new Point(210, 113);
             panel1.Name = "panel1";
             panel1.Size = new Size(774, 224);
             panel1.TabIndex = 18;
@@ -286,10 +286,10 @@
             // 
             pictureBox1.BackColor = Color.Transparent;
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(15, 9);
+            pictureBox1.Location = new Point(9, 9);
             pictureBox1.Margin = new Padding(5);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(35, 35);
+            pictureBox1.Size = new Size(30, 30);
             pictureBox1.SizeMode = PictureBoxSizeMode.StretchImage;
             pictureBox1.TabIndex = 5;
             pictureBox1.TabStop = false;
@@ -297,35 +297,35 @@
             // lbl_alamatPengiriman
             // 
             lbl_alamatPengiriman.AutoSize = true;
-            lbl_alamatPengiriman.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold | FontStyle.Italic, GraphicsUnit.Point);
+            lbl_alamatPengiriman.Font = new Font("Segoe UI", 12F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_alamatPengiriman.ForeColor = Color.DimGray;
             lbl_alamatPengiriman.Location = new Point(49, 9);
             lbl_alamatPengiriman.Name = "lbl_alamatPengiriman";
-            lbl_alamatPengiriman.Size = new Size(227, 32);
+            lbl_alamatPengiriman.Size = new Size(233, 32);
             lbl_alamatPengiriman.TabIndex = 4;
             lbl_alamatPengiriman.Text = "Alamat Pengiriman";
             // 
             // txt_alamat
             // 
-            txt_alamat.Location = new Point(36, 163);
+            txt_alamat.Location = new Point(59, 170);
             txt_alamat.Name = "txt_alamat";
-            txt_alamat.Size = new Size(695, 33);
+            txt_alamat.Size = new Size(657, 33);
             txt_alamat.TabIndex = 3;
             txt_alamat.UseSystemPasswordChar = true;
             // 
             // txt_namaPenerima
             // 
             txt_namaPenerima.Font = new Font("Arial", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            txt_namaPenerima.Location = new Point(36, 83);
+            txt_namaPenerima.Location = new Point(59, 88);
             txt_namaPenerima.Name = "txt_namaPenerima";
-            txt_namaPenerima.Size = new Size(296, 28);
+            txt_namaPenerima.Size = new Size(657, 28);
             txt_namaPenerima.TabIndex = 2;
             // 
             // lbl_alamat
             // 
             lbl_alamat.AutoSize = true;
             lbl_alamat.ForeColor = Color.FromArgb(102, 102, 102);
-            lbl_alamat.Location = new Point(36, 133);
+            lbl_alamat.Location = new Point(59, 132);
             lbl_alamat.Name = "lbl_alamat";
             lbl_alamat.Size = new Size(141, 24);
             lbl_alamat.TabIndex = 1;
@@ -335,7 +335,7 @@
             // 
             lbl_namaPenerima.AutoSize = true;
             lbl_namaPenerima.ForeColor = Color.FromArgb(102, 102, 102);
-            lbl_namaPenerima.Location = new Point(36, 55);
+            lbl_namaPenerima.Location = new Point(59, 54);
             lbl_namaPenerima.Name = "lbl_namaPenerima";
             lbl_namaPenerima.Size = new Size(135, 24);
             lbl_namaPenerima.TabIndex = 0;
@@ -347,7 +347,7 @@
             lbl_checkout.BackColor = Color.Transparent;
             lbl_checkout.Font = new Font("Segoe UI", 14F, FontStyle.Bold, GraphicsUnit.Point);
             lbl_checkout.ForeColor = Color.FromArgb(173, 51, 109);
-            lbl_checkout.Location = new Point(407, 47);
+            lbl_checkout.Location = new Point(523, 52);
             lbl_checkout.Name = "lbl_checkout";
             lbl_checkout.Size = new Size(152, 38);
             lbl_checkout.TabIndex = 17;
@@ -370,7 +370,7 @@
             btn_back.Image = (Image)resources.GetObject("btn_back.Image");
             btn_back.Location = new Point(15, 13);
             btn_back.Name = "btn_back";
-            btn_back.Size = new Size(45, 37);
+            btn_back.Size = new Size(45, 45);
             btn_back.SizeMode = PictureBoxSizeMode.Zoom;
             btn_back.TabIndex = 16;
             btn_back.TabStop = false;
@@ -386,7 +386,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 215, 220);
-            ClientSize = new Size(899, 798);
+            ClientSize = new Size(1178, 798);
             Controls.Add(panel3);
             Controls.Add(panel2);
             Controls.Add(panel1);
