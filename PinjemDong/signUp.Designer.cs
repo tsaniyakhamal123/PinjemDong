@@ -46,7 +46,7 @@
             // 
             // usernameBox
             // 
-            usernameBox.Location = new Point(27, 196);
+            usernameBox.Location = new Point(31, 196);
             usernameBox.Name = "usernameBox";
             usernameBox.Size = new Size(296, 33);
             usernameBox.TabIndex = 0;
@@ -54,7 +54,7 @@
             // 
             // passwordBox
             // 
-            passwordBox.Location = new Point(27, 286);
+            passwordBox.Location = new Point(31, 286);
             passwordBox.Name = "passwordBox";
             passwordBox.Size = new Size(296, 33);
             passwordBox.TabIndex = 1;
@@ -62,7 +62,7 @@
             // 
             // emailBox
             // 
-            emailBox.Location = new Point(32, 442);
+            emailBox.Location = new Point(31, 440);
             emailBox.Name = "emailBox";
             emailBox.Size = new Size(291, 33);
             emailBox.TabIndex = 2;
@@ -70,7 +70,7 @@
             // 
             // NameBox
             // 
-            NameBox.Location = new Point(27, 364);
+            NameBox.Location = new Point(31, 364);
             NameBox.Name = "NameBox";
             NameBox.Size = new Size(296, 33);
             NameBox.TabIndex = 3;
@@ -114,7 +114,7 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.FromArgb(102, 102, 102);
-            label4.Location = new Point(32, 413);
+            label4.Location = new Point(36, 413);
             label4.Name = "label4";
             label4.Size = new Size(53, 24);
             label4.TabIndex = 10;
@@ -124,7 +124,7 @@
             // 
             label1.AutoSize = true;
             label1.ForeColor = Color.FromArgb(102, 102, 102);
-            label1.Location = new Point(27, 337);
+            label1.Location = new Point(31, 337);
             label1.Name = "label1";
             label1.Size = new Size(56, 24);
             label1.TabIndex = 9;
@@ -168,7 +168,7 @@
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.FromArgb(102, 102, 102);
-            label3.Location = new Point(27, 249);
+            label3.Location = new Point(31, 249);
             label3.Name = "label3";
             label3.Size = new Size(88, 24);
             label3.TabIndex = 1;
@@ -178,7 +178,7 @@
             // 
             label2.AutoSize = true;
             label2.ForeColor = Color.FromArgb(102, 102, 102);
-            label2.Location = new Point(27, 159);
+            label2.Location = new Point(31, 159);
             label2.Name = "label2";
             label2.Size = new Size(93, 24);
             label2.TabIndex = 0;

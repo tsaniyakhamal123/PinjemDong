@@ -56,19 +56,19 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(1, 40);
+            dataGridView1.Location = new Point(109, 19);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 62;
             dataGridView1.RowTemplate.Height = 33;
-            dataGridView1.Size = new Size(1035, 412);
+            dataGridView1.Size = new Size(968, 330);
             dataGridView1.TabIndex = 9;
-           // dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // addButton
             // 
-            addButton.Location = new Point(1136, 596);
+            addButton.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            addButton.Location = new Point(1017, 570);
             addButton.Name = "addButton";
-            addButton.Size = new Size(198, 71);
+            addButton.Size = new Size(149, 38);
             addButton.TabIndex = 10;
             addButton.Text = "Tambah Barang";
             addButton.UseVisualStyleBackColor = true;
@@ -76,69 +76,73 @@
             // 
             // NameTB
             // 
-            NameTB.Location = new Point(558, 590);
+            NameTB.Location = new Point(269, 373);
             NameTB.Name = "NameTB";
-            NameTB.Size = new Size(150, 31);
+            NameTB.Size = new Size(808, 31);
             NameTB.TabIndex = 11;
             NameTB.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(332, 593);
+            label1.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label1.Location = new Point(109, 373);
             label1.Name = "label1";
-            label1.Size = new Size(117, 25);
+            label1.Size = new Size(114, 21);
             label1.TabIndex = 12;
-            label1.Text = "nama barang";
+            label1.Text = "Nama Barang";
             // 
             // label3
             // 
             label3.AutoSize = true;
-            label3.Location = new Point(335, 648);
+            label3.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label3.Location = new Point(109, 418);
             label3.Name = "label3";
-            label3.Size = new Size(54, 25);
+            label3.Size = new Size(52, 21);
             label3.TabIndex = 15;
-            label3.Text = "stock";
+            label3.Text = "Stock";
             // 
             // stockTB
             // 
-            stockTB.Location = new Point(558, 648);
+            stockTB.Location = new Point(269, 418);
             stockTB.Name = "stockTB";
-            stockTB.Size = new Size(150, 31);
+            stockTB.Size = new Size(808, 31);
             stockTB.TabIndex = 16;
             stockTB.TextChanged += stockTB_TextChanged;
             // 
             // k
             // 
             k.AutoSize = true;
-            k.Location = new Point(332, 719);
+            k.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            k.Location = new Point(109, 466);
             k.Name = "k";
-            k.Size = new Size(77, 25);
+            k.Size = new Size(75, 21);
             k.TabIndex = 19;
-            k.Text = "kategori";
+            k.Text = "Kategori";
             // 
             // kategoriTB
             // 
-            kategoriTB.Location = new Point(558, 713);
+            kategoriTB.Location = new Point(269, 466);
             kategoriTB.Name = "kategoriTB";
-            kategoriTB.Size = new Size(150, 31);
+            kategoriTB.Size = new Size(808, 31);
             kategoriTB.TabIndex = 20;
             kategoriTB.TextChanged += kategoriTB_TextChanged;
             // 
             // label4
             // 
             label4.AutoSize = true;
-            label4.Location = new Point(332, 784);
+            label4.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            label4.Location = new Point(109, 506);
             label4.Name = "label4";
-            label4.Size = new Size(57, 25);
+            label4.Size = new Size(56, 21);
             label4.TabIndex = 21;
-            label4.Text = "harga";
+            label4.Text = "Harga";
             // 
             // hargaTB
             // 
-            hargaTB.Location = new Point(558, 781);
+            hargaTB.Location = new Point(269, 506);
             hargaTB.Name = "hargaTB";
-            hargaTB.Size = new Size(150, 31);
+            hargaTB.Size = new Size(808, 31);
             hargaTB.TabIndex = 22;
             hargaTB.TextChanged += hargaTB_TextChanged;
             // 
@@ -149,7 +153,7 @@
             AutoSize = true;
             AutoSizeMode = AutoSizeMode.GrowAndShrink;
             BackColor = Color.FromArgb(236, 215, 220);
-            ClientSize = new Size(1455, 968);
+            ClientSize = new Size(1178, 619);
             Controls.Add(hargaTB);
             Controls.Add(label4);
             Controls.Add(kategoriTB);
@@ -164,6 +168,7 @@
             Name = "homePage";
             Text = "homePage";
             Load += homePage_Load;
+            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }

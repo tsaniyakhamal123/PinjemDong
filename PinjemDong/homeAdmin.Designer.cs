@@ -53,6 +53,7 @@
             // 
             // backBtn
             // 
+            backBtn.BackColor = Color.FromArgb(236, 215, 220);
             backBtn.Image = (Image)resources.GetObject("backBtn.Image");
             backBtn.Location = new Point(12, 22);
             backBtn.Name = "backBtn";
@@ -66,7 +67,7 @@
             // 
             pictureBox3.BackColor = Color.FromArgb(236, 215, 220);
             pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(12, 120);
+            pictureBox3.Location = new Point(5, 120);
             pictureBox3.Name = "pictureBox3";
             pictureBox3.Size = new Size(186, 103);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
@@ -76,7 +77,7 @@
             // pictureBox2
             // 
             pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(752, 32);
+            pictureBox2.Location = new Point(916, 7);
             pictureBox2.Name = "pictureBox2";
             pictureBox2.Size = new Size(220, 51);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
@@ -87,7 +88,7 @@
             // pictureBox4
             // 
             pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(533, 32);
+            pictureBox4.Location = new Point(697, 7);
             pictureBox4.Name = "pictureBox4";
             pictureBox4.Size = new Size(213, 51);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
@@ -96,11 +97,11 @@
             // 
             // btn_load
             // 
-            btn_load.BackColor = Color.FromArgb(228, 183, 183);
-            btn_load.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_load.Location = new Point(782, 604);
+            btn_load.BackColor = Color.White;
+            btn_load.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_load.Location = new Point(828, 626);
             btn_load.Name = "btn_load";
-            btn_load.Size = new Size(139, 65);
+            btn_load.Size = new Size(120, 40);
             btn_load.TabIndex = 11;
             btn_load.Text = "Load Data";
             btn_load.UseVisualStyleBackColor = false;
@@ -108,11 +109,11 @@
             // 
             // btn_delete
             // 
-            btn_delete.BackColor = Color.FromArgb(228, 183, 183);
-            btn_delete.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_delete.Location = new Point(569, 604);
+            btn_delete.BackColor = Color.White;
+            btn_delete.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_delete.Location = new Point(614, 626);
             btn_delete.Name = "btn_delete";
-            btn_delete.Size = new Size(112, 65);
+            btn_delete.Size = new Size(120, 40);
             btn_delete.TabIndex = 10;
             btn_delete.Text = "Delete";
             btn_delete.UseVisualStyleBackColor = false;
@@ -120,11 +121,11 @@
             // 
             // btn_edit
             // 
-            btn_edit.BackColor = Color.FromArgb(228, 183, 183);
-            btn_edit.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            btn_edit.Location = new Point(348, 604);
+            btn_edit.BackColor = Color.White;
+            btn_edit.Font = new Font("Segoe UI", 8F, FontStyle.Bold, GraphicsUnit.Point);
+            btn_edit.Location = new Point(396, 626);
             btn_edit.Name = "btn_edit";
-            btn_edit.Size = new Size(112, 65);
+            btn_edit.Size = new Size(120, 40);
             btn_edit.TabIndex = 9;
             btn_edit.Text = "Edit";
             btn_edit.UseVisualStyleBackColor = false;
@@ -135,7 +136,7 @@
             panel1.BackColor = Color.White;
             panel1.Controls.Add(filterbtn);
             panel1.Controls.Add(productData);
-            panel1.Location = new Point(233, 120);
+            panel1.Location = new Point(272, 120);
             panel1.Name = "panel1";
             panel1.Size = new Size(808, 463);
             panel1.TabIndex = 8;

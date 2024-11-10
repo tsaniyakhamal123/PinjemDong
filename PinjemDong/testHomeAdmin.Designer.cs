@@ -43,9 +43,9 @@
             // backBtn
             // 
             backBtn.Image = (Image)resources.GetObject("backBtn.Image");
-            backBtn.Location = new Point(36, 33);
+            backBtn.Location = new Point(12, 12);
             backBtn.Name = "backBtn";
-            backBtn.Size = new Size(66, 68);
+            backBtn.Size = new Size(54, 50);
             backBtn.TabIndex = 1;
             backBtn.UseVisualStyleBackColor = true;
             // 
@@ -54,10 +54,10 @@
             deleteBtn.BackColor = Color.FromArgb(236, 215, 220);
             deleteBtn.Font = new Font("Comic Sans MS", 9F, FontStyle.Bold, GraphicsUnit.Point);
             deleteBtn.Image = (Image)resources.GetObject("deleteBtn.Image");
-            deleteBtn.Location = new Point(516, 45);
+            deleteBtn.Location = new Point(509, 45);
             deleteBtn.Margin = new Padding(30, 45, 40, 3);
             deleteBtn.Name = "deleteBtn";
-            deleteBtn.Size = new Size(84, 75);
+            deleteBtn.Size = new Size(77, 60);
             deleteBtn.TabIndex = 5;
             deleteBtn.Text = "Delete";
             deleteBtn.TextAlign = ContentAlignment.BottomCenter;
@@ -74,7 +74,7 @@
             editBtn.Margin = new Padding(90, 45, 30, 3);
             editBtn.Name = "editBtn";
             editBtn.RightToLeft = RightToLeft.No;
-            editBtn.Size = new Size(84, 74);
+            editBtn.Size = new Size(77, 60);
             editBtn.TabIndex = 5;
             editBtn.Text = "Edit";
             editBtn.TextAlign = ContentAlignment.BottomCenter;
@@ -124,7 +124,7 @@
             flowLayoutPanel1.Controls.Add(editBtn);
             flowLayoutPanel1.Controls.Add(deleteBtn);
             flowLayoutPanel1.Controls.Add(label1);
-            flowLayoutPanel1.Location = new Point(181, 100);
+            flowLayoutPanel1.Location = new Point(276, 112);
             flowLayoutPanel1.Name = "flowLayoutPanel1";
             flowLayoutPanel1.Size = new Size(644, 395);
             flowLayoutPanel1.TabIndex = 0;
@@ -148,7 +148,7 @@
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(236, 215, 220);
-            ClientSize = new Size(866, 540);
+            ClientSize = new Size(1178, 619);
             Controls.Add(backBtn);
             Controls.Add(flowLayoutPanel1);
             Name = "testHomeAdmin";
