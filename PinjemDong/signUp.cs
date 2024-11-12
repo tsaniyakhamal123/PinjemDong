@@ -20,7 +20,8 @@ namespace PinjemDong
             InitializeComponent();
         }
         private NpgsqlConnection conn;
-        string connstring = "Host=localhost;Port=5432;Username=postgres;Password=ininiya123;Database=JunproBener";
+        string connstring = "Host=postgres-junpro.cpm48umoy5cj.ap-southeast-2.rds.amazonaws.com;Port=5432;Username=postgres;Password=PinjemDong!;Database=pinjemdong";
+
 
         private void NameBox_TextChanged(object sender, EventArgs e)
         {
@@ -91,9 +92,6 @@ namespace PinjemDong
                         usernameBox.Clear();
                         passwordBox.Clear();
 
-                        login loginForm = new login();
-                        loginForm.Show();
-                        this.Close();
                     }
                 }
             }
@@ -105,8 +103,15 @@ namespace PinjemDong
             {
                 MessageBox.Show("Error: " + ex.Message, "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
+
+
+            login loginForm = new login();
+            loginForm.Show();
+            this.Hide();  // Sembunyikan form sign up sebelum membuka form login
+
+
         }
 
-        
+
     }
 }
